@@ -1,0 +1,410 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 15px;
+}
+p {
+  font-weight: 600;
+  color: #222;
+  font-size: 13px;
+}
+.flex-items {
+  display: flex;
+  justify-content: space-between;
+}
+.title-para {
+  text-align: right;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+.page-outerdiv {
+  border: 2px solid #222;
+  padding: 2px;
+}
+.page-innerdiv {
+  border: 1px solid #222;
+}
+.double-border {
+  border-bottom: 3px double #222;
+}
+.page-2 h2 {
+  font-size: 15px;
+  padding: 3px 0;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 2px solid #222;
+}
+
+/* ----------------------------- Page 1 ----------------------------- */
+.page-1 .header {
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-size: 12px;
+}
+.conditions-rules {
+  padding: 0 8px 0px;
+}
+.conditions-rules h2 {
+  margin: 10px;
+  width: fit-content;
+  text-decoration: underline;
+  margin: 10px auto;
+  font-size: 14px;
+}
+.conditions-rules p {
+  margin-bottom: 8px;
+}
+
+/* ----------------------------- Page 2 ----------------------------- */
+
+.page-2 table td {
+  vertical-align: top;
+}
+
+.employed-company,
+.start-working {
+  padding: 3px 10px 5px;
+}
+.start-working hr {
+  min-width: 50%;
+  align-self: flex-end;
+}
+.GOSI {
+  border-bottom: 2px solid #222;
+  padding: 3px 10px 5px;
+  align-items: center;
+}
+.GOSI span {
+  border: 1px solid #222;
+  width: 28px;
+  height: 20px;
+  display: inline-block;
+}
+.GOSI div {
+  margin-top: 5px;
+  height: 30px;
+  border: 3px solid #222;
+  padding: 2px;
+}
+.record-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+.record-table td {
+  border: 1px solid #222;
+}
+.record-table td > hr {
+  width: 90%;
+  margin: 15px auto;
+}
+.table-line {
+  margin-bottom: 8px;
+  padding: 0 8px;
+}
+.table-line hr {
+  width: 50%;
+  align-self: flex-end;
+}
+
+/* ----------------------------- Page 3 ----------------------------- */
+.page-3 table h3,
+.page-3 table th {
+  font-size: 12px;
+}
+.page-3 table h4,
+.page-3 table td {
+  font-size: 10px;
+}
+.driving-liecence-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.driving-liecence-table thead th {
+  border-bottom: 3px double #222;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.driving-liecence-table tbody td {
+  border-width: 3px 0.5px;
+  border-color: #222;
+  border-style: double solid double;
+  padding: 0 12px;
+}
+.driving-liecence-table tbody td div {
+  display: flex;
+}
+.driving-liecence-table tbody td div hr {
+  width: 70%;
+  align-self: flex-end;
+  margin-top: 15px;
+  margin-bottom: 2px;
+}
+.convicted > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.edutation-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.edutation-table td,
+.edutation-table th {
+  border: 1px solid #222;
+}
+.edutation-table td {
+  padding: 10px 7px;
+}
+.edutation-table th h3,
+.edutation-table th h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+.languages-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.languages-table h3 {
+  margin: 0;
+}
+.languages-table td,
+.languages-table th {
+  border: 1px solid #222;
+}
+.languages-table th div {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #222;
+  margin-top: 10px;
+}
+.language-levels h3 span {
+  display: block;
+}
+.language-levels h3 {
+  width: 33%;
+  padding: 5px 0;
+}
+.language-levels h3:nth-child(2) {
+  border-left: 1px solid #222;
+  border-right: 1px solid #222;
+}
+.personal-info .user-img {
+  width: 25%;
+}
+.personal-info .personal-data {
+  width: 75%;
+  margin-left: 5px;
+  border-left: 1px solid #222;
+}
+.personal-info .fav-city {
+  width: 40%;
+  padding: 5px;
+}
+.personal-info .position-job {
+  width: 60%;
+  padding: 5px;
+  border-left: 1px solid #222;
+}
+.personal-info .position-job hr {
+  width: 85%;
+  margin: 30px auto;
+}
+.personal-data table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.personal-data table th, .personal-data table td {
+  border: 1px solid #222;
+  padding: 4px 2px;
+  font-size: 12px;
+  text-align: center;
+}
+.personal-data table td {
+  height: 30px;
+  width: 25%;
+}
+.personal-data table th:first-of-type {
+  border-left: 0;
+}
+.personal-data table th:last-of-type {
+  border-right: 0;
+}
+.personal-data table td {
+  border-bottom: 0;
+}
+.personal-info .user-img {
+  margin: 10px;
+}
+.personal-info .user-img > div {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+.national-id {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 5px 5px 10px;
+}
+.national-id th, .national-id td {
+  border: 1px solid #222;
+  font-size: 12px;
+  padding: 5px;
+}
+.national-id td {
+  height: 30px;
+}
+.contact-data {
+  font-weight: 600;
+  font-size: 12px;
+  padding: 5px;
+  border-top: 3px double #222;
+  border-bottom: 3px double #222;
+}
+.contact-data p {margin-bottom: 8px;}
+.contact-data hr {
+  width: 30%;
+  margin: auto;
+  margin-top: 15px;
+}
+.material-status {
+  text-align: center;
+}
+.material-status p {
+  margin-bottom: 8px;
+}
+.dependents-table {
+  border-collapse: collapse;
+  width: 100%;
+  border-top: 3px double #222;
+  border-bottom: 3px double #222;
+  margin-bottom: 10px;
+}
+.dependents-table th, .dependents-table td {
+  border: 1px solid #222;
+  padding: 3px 5px;
+  font-size: 12px;
+}
+.dependents-table td {
+  height: 30px;
+}
+.depebdents-address p span {
+  text-decoration: underline;
+  padding: 0 8px;
+}
+.depebdents-address hr {
+  width: 80%;
+  margin: 20px auto;
+}
+
+/* ----------------------------- Page 4 ----------------------------- */
+.page-4 h2 {
+  font-size: 14px;
+}
+.page-4 table th {
+  font-size: 12px;
+}
+.page-4 table td {
+  font-size: 12px;
+  font-weight: 600;
+  vertical-align: top;
+}
+.page-innerdiv {
+  border: 1px solid #222;
+}
+.know-about-job {
+  padding: 3px 10px 5px;
+}
+.know-about-job hr,
+.other-data hr {
+  min-width: 40%;
+  align-self: flex-end;
+}
+.relatives-in-company > div {
+  padding: 3px 10px 10px;
+  margin-bottom: 40px;
+}
+.relatives-in-company hr {
+  width: 80%;
+  margin: 20px auto;
+}
+.not-relatives > div {
+  padding: 3px 10px 10px;
+}
+.not-relatives table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.not-relatives table th,
+.not-relatives table td {
+  border: 1px solid #222;
+}
+.not-relatives table td {
+  padding: 15px 8px;
+}
+.other-data > div {
+  padding: 3px 10px 10px;
+}
+.other-data > hr {
+  width: 80%;
+  margin: 20px auto 10px;
+}
+.certificates {
+  width: 100%;
+  border-collapse: collapse;
+}
+.certificates td {
+  border: 1px solid #222;
+  padding: 3px;
+}
+.certificates tr td:last-of-type {
+  width: 40%;
+}
+.certificates hr {
+  width: 50%;
+  align-self: flex-end;
+}
+.usage-company-title {
+  border-top: 5px solid #222;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  padding: 5px 15px;
+}
+.usage-company > hr,
+.recommendations > hr,
+.human-resources > hr {
+  width: 80%;
+  margin: 20px auto;
+}
+.usage-company p,
+.recommendations p,
+.human-resources p {
+  text-align: right;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+.usage-company p span:last-of-type,
+.recommendations p span:last-of-type,
+.human-resources p span:last-of-type {
+  width: 100px;
+  height: 1px;
+  display: block;
+  background-color: #222;
+  margin-right: 10px;
+}
+.recommendations {
+  border-top: 3px double #222;
+  padding: 5px 15px;
+}
+.human-resources h2 {
+  text-align: center;
+  padding-top: 8px;
+}

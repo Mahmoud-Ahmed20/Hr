@@ -1,0 +1,16 @@
+                                        <td>{{$penalty->number}}</td>
+                                        <td>{{optional($penalty->NameEmploye)->name}}</td>
+                                        <td>{{optional($penalty->EmployeAdministration)->name_administration}}</td>
+                                        <td>{{optional($penalty->NameSections)->name}}</td>
+                                        <td>{{$penalty->job_title}}</td>
+                                        @if(in_array('last_penalty',$inputs))<td>{{$penalty->last_penalty}}</td>@endif
+                                        @if(in_array('joining_date',$inputs))<td>{{$penalty->joining_date}}</td>@endif
+                                        @if(in_array('subject',$inputs))<td>{{$penalty->subject}}</td>@endif
+                                        @if(in_array('draw_attention',$inputs))<td>{{$penalty->draw_attention}}</td>@endif
+                                        @if(in_array('penalty',$inputs))<td>{{$penalty->penalty}}</td>@endif
+                                        @if(in_array('deduction',$inputs))<td>{{$penalty->deduction}}</td>@endif
+                                        @if(in_array('others',$inputs))<td>{{$penalty->others}}</td>@endif
+                                        @if(in_array('stopping_from_work_for',$inputs))<td>{{$penalty->stopping_from_work_for}}</td>@endif
+                                        @if(in_array('stopping_the_yearly_increase',$inputs))<td>{{$penalty->stopping_the_yearly_increase}}</td>@endif
+                                        @if(in_array('firing_with_a_bying',$inputs))<td>{{$penalty->firing_with_a_bying}}</td>@endif
+                                        @if(in_array('firing_without_a_bying',$inputs))<td>{{$penalty->firing_without_a_bying}}</td>@endif

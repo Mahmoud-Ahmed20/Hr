@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-UA-Compatible" content="ie=edge">
+    <title>PDF</title>
+    <style>
+        #emp{
+            font-family: 'dejavu sans', sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 50%;
+            /* transform: rotate(90deg) */
+        }
+        #emp td, #emp th{
+            border: 1px solid #ddd;
+            /* padding: 8px; */
+        }
+        #emp tr:nth-child(even){
+            background-color: #abb4b4;
+        }
+        #emp th{
+            /* padding-top: 12px;
+            padding-bottom: 12px; */
+            text-align: left;
+            background-color: #4CAF50;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <table id="emp">
+        <thead>
+            <?php
+                $Arabic = new \I18N_Arabic('Glyphs');
+                $table_name = $Arabic->utf8Glyphs("الموظف");
+                $table_section = $Arabic->utf8Glyphs("القسم");
+                $table_job= $Arabic->utf8Glyphs("الوظيفه");
+            $table_action_type = $Arabic->utf8Glyphs("نوع الاجراء");
+            ?>
+            <tr>
+
+
+
+                <td>{{$table_name}}</td>
+                <td>{{$table_job}}</td>
+                <td>{{$table_section}}</td>
+                <td>{{$table_action_type}}</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach($staffServiceActions as $OnestaffsActions)
+
+                <tr>
+                    <td>{{$Arabic->utf8Glyphs(($OnestaffsActions->staff)? $OnestaffsActions->staff->name : '')}} </td>
+                    <td>{{$Arabic->utf8Glyphs(($OnestaffsActions->job)?$OnestaffsActions->job->name_job :'')}}</td>
+                    <td>{{$Arabic->utf8Glyphs(($OnestaffsActions->section)? $OnestaffsActions->section->name : '')}} </td>
+                    <td>{{$Arabic->utf8Glyphs($OnestaffsActions->action_type)}}</td>
+                </tr>
+            @endforeach
+        </tbody>
+    </table>
+</body>
+</html>
